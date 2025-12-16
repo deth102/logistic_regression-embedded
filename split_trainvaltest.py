@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # ====== CẤU HÌNH ======
-INPUT_FILE = r"D:\lt\datn\logistic regression for embedding\[constant speed]features_5label.csv"
+INPUT_FILE = r"D:\lt\datn\logistic regression for embedding\features_5labels.csv"
 OUTPUT_DIR = r"D:\lt\datn\logistic regression for embedding"
 
 LABEL_COL = "label"

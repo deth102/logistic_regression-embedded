@@ -1,7 +1,7 @@
 from Model import SoftmaxLogisticTrainer
 from prepare_data import X_train, y_train, X_val, y_val, X_test, y_test
 import numpy as np
-
+import pickle
 trainer = SoftmaxLogisticTrainer(
     lr=0.05,
     l2=1e-4,
@@ -14,12 +14,7 @@ model = trainer.fit(
     patience=20
 )
 
-np.savez(
-    "softmax_logistic_params.npz",
-    W=model.W,
-    b=model.b,
-    mean=model.mean,
-    std=model.std
-)
+with open("softmax_logistic_model.pkl", "wb") as f:
+    pickle.dump(model, f)
     
 
