@@ -1,5 +1,5 @@
 from Model import SoftmaxLogisticTrainer
-from Prepare_data import X_train, y_train, X_val, y_val, X_test, y_test
+from prepare_data import X_train, y_train, X_val, y_val, X_test, y_test
 import numpy as np
 
 trainer = SoftmaxLogisticTrainer(

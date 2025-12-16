@@ -1,4 +1,4 @@
-from Preprocessing import bandpass_filter, hilbert_signal, normalize, windowing
+from preprocessing import bandpass_filter, hilbert_signal, normalize, windowing
 from feature_extraction import frequency_domain_features, time_frequency_domain_features, time_domain_features
 import pandas as pd
 import numpy as np
